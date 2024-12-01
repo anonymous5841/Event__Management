@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{10BA1A99-C0DC-4324-B116-F5FBA20BC482}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>project</RootNamespace>
+    <AssemblyName>project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EventEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventEditForm.Designer.cs">
+      <DependentUpon>EventEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventViewForm.Designer.cs">
+      <DependentUpon>EventViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEvent.Designer.cs">
+      <DependentUpon>FormEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSponsor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSponsor.Designer.cs">
+      <DependentUpon>FormSponsor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVendor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVendor.Designer.cs">
+      <DependentUpon>FormVendor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVenue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVenue.Designer.cs">
+      <DependentUpon>FormVenue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainEmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainEmployeeForm.Designer.cs">
+      <DependentUpon>MainEmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SponsorCreateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SponsorCreateForm.Designer.cs">
+      <DependentUpon>SponsorCreateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SponsorEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SponsorEditForm.Designer.cs">
+      <DependentUpon>SponsorEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VendorCreateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendorCreateForm.Designer.cs">
+      <DependentUpon>VendorCreateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VendorEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendorEditForm.Designer.cs">
+      <DependentUpon>VendorEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VenueCreateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VenueCreateForm.Designer.cs">
+      <DependentUpon>VenueCreateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VenueEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VenueEditForm.Designer.cs">
+      <DependentUpon>VenueEditForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="EventEditForm.resx">
+      <DependentUpon>EventEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventViewForm.resx">
+      <DependentUpon>EventViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEvent.resx">
+      <DependentUpon>FormEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSponsor.resx">
+      <DependentUpon>FormSponsor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVendor.resx">
+      <DependentUpon>FormVendor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVenue.resx">
+      <DependentUpon>FormVenue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainEmployeeForm.resx">
+      <DependentUpon>MainEmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SponsorCreateForm.resx">
+      <DependentUpon>SponsorCreateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SponsorEditForm.resx">
+      <DependentUpon>SponsorEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VendorCreateForm.resx">
+      <DependentUpon>VendorCreateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VendorEditForm.resx">
+      <DependentUpon>VendorEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VenueCreateForm.resx">
+      <DependentUpon>VenueCreateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VenueEditForm.resx">
+      <DependentUpon>VenueEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
