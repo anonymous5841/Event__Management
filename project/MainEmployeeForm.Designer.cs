@@ -34,12 +34,13 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.guna2GradientButtonAttendee = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2GradientButtonLogout = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButtonSponsor = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButtonVenue = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButtonVendor = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButtonEvent = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.panel1.SuspendLayout();
@@ -110,6 +111,7 @@
             // 
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Controls.Add(this.guna2GradientButtonAttendee);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.guna2GradientButtonLogout);
             this.panel2.Controls.Add(this.guna2GradientButtonSponsor);
@@ -121,6 +123,40 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(253, 624);
             this.panel2.TabIndex = 1;
+            // 
+            // guna2GradientButtonAttendee
+            // 
+            this.guna2GradientButtonAttendee.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientButtonAttendee.BorderRadius = 20;
+            this.guna2GradientButtonAttendee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButtonAttendee.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButtonAttendee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButtonAttendee.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButtonAttendee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientButtonAttendee.FillColor = System.Drawing.Color.Transparent;
+            this.guna2GradientButtonAttendee.FillColor2 = System.Drawing.Color.Transparent;
+            this.guna2GradientButtonAttendee.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GradientButtonAttendee.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButtonAttendee.Location = new System.Drawing.Point(12, 454);
+            this.guna2GradientButtonAttendee.Name = "guna2GradientButtonAttendee";
+            this.guna2GradientButtonAttendee.Size = new System.Drawing.Size(244, 45);
+            this.guna2GradientButtonAttendee.TabIndex = 10;
+            this.guna2GradientButtonAttendee.Text = "Event Feedback";
+            this.guna2GradientButtonAttendee.Click += new System.EventHandler(this.guna2GradientButtonAttendee_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.ErrorImage = null;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(68, 31);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(116, 92);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // guna2GradientButtonLogout
             // 
@@ -222,17 +258,6 @@
             this.guna2GradientButtonEvent.Text = "Event Management";
             this.guna2GradientButtonEvent.Click += new System.EventHandler(this.guna2GradientButtonEvent_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(253, 157);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -297,5 +322,6 @@
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButtonVenue;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButtonVendor;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButtonLogout;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButtonAttendee;
     }
 }
