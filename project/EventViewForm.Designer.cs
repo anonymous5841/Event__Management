@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EventViewForm));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.labelEvent = new System.Windows.Forms.Label();
@@ -41,9 +43,9 @@
             this.E_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.E_type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.E_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.E_Vendor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.E_Sponsor_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.E_venue = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.E_ticket = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Attendee_Id_FK = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.E_profitpercen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.E_Profit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -59,6 +61,7 @@
             this.guna2CustomGradientPanel1.AutoScroll = true;
             this.guna2CustomGradientPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel1.BorderRadius = 40;
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2GradientButton3);
             this.guna2CustomGradientPanel1.Controls.Add(this.label1);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2GradientButton2);
             this.guna2CustomGradientPanel1.Controls.Add(this.labelEvent);
@@ -74,6 +77,27 @@
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(842, 605);
             this.guna2CustomGradientPanel1.TabIndex = 3;
+            // 
+            // guna2GradientButton3
+            // 
+            this.guna2GradientButton3.BorderRadius = 19;
+            this.guna2GradientButton3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton3.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientButton3.FillColor = System.Drawing.Color.Transparent;
+            this.guna2GradientButton3.FillColor2 = System.Drawing.Color.Transparent;
+            this.guna2GradientButton3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.guna2GradientButton3.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton3.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton3.Image")));
+            this.guna2GradientButton3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2GradientButton3.Location = new System.Drawing.Point(26, 297);
+            this.guna2GradientButton3.Name = "guna2GradientButton3";
+            this.guna2GradientButton3.Size = new System.Drawing.Size(146, 36);
+            this.guna2GradientButton3.TabIndex = 38;
+            this.guna2GradientButton3.Text = "Refresh";
+            this.guna2GradientButton3.Click += new System.EventHandler(this.guna2GradientButton3_Click);
             // 
             // label1
             // 
@@ -163,9 +187,9 @@
             this.E_Name,
             this.E_type,
             this.E_date,
-            this.E_Vendor,
+            this.E_Sponsor_id,
             this.E_venue,
-            this.E_ticket,
+            this.Attendee_Id_FK,
             this.E_profitpercen,
             this.E_Profit});
             this.guna2DataGridView1.Cursor = System.Windows.Forms.Cursors.Cross;
@@ -234,25 +258,25 @@
             this.E_date.Name = "E_date";
             this.E_date.ReadOnly = true;
             // 
-            // E_Vendor
+            // E_Sponsor_id
             // 
-            this.E_Vendor.FillWeight = 101.8612F;
-            this.E_Vendor.HeaderText = "Vendor";
-            this.E_Vendor.Name = "E_Vendor";
-            this.E_Vendor.ReadOnly = true;
+            this.E_Sponsor_id.FillWeight = 101.8612F;
+            this.E_Sponsor_id.HeaderText = "Sponsor_id";
+            this.E_Sponsor_id.Name = "E_Sponsor_id";
+            this.E_Sponsor_id.ReadOnly = true;
             // 
             // E_venue
             // 
             this.E_venue.FillWeight = 101.8612F;
-            this.E_venue.HeaderText = "Venue";
+            this.E_venue.HeaderText = "Sponsor%";
             this.E_venue.Name = "E_venue";
             this.E_venue.ReadOnly = true;
             // 
-            // E_ticket
+            // Attendee_Id_FK
             // 
-            this.E_ticket.HeaderText = "Tickets";
-            this.E_ticket.Name = "E_ticket";
-            this.E_ticket.ReadOnly = true;
+            this.Attendee_Id_FK.HeaderText = "Attendee_Id";
+            this.Attendee_Id_FK.Name = "Attendee_Id_FK";
+            this.Attendee_Id_FK.ReadOnly = true;
             // 
             // E_profitpercen
             // 
@@ -342,10 +366,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn E_Name;
         private System.Windows.Forms.DataGridViewTextBoxColumn E_type;
         private System.Windows.Forms.DataGridViewTextBoxColumn E_date;
-        private System.Windows.Forms.DataGridViewTextBoxColumn E_Vendor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn E_Sponsor_id;
         private System.Windows.Forms.DataGridViewTextBoxColumn E_venue;
-        private System.Windows.Forms.DataGridViewTextBoxColumn E_ticket;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Attendee_Id_FK;
         private System.Windows.Forms.DataGridViewTextBoxColumn E_profitpercen;
         private System.Windows.Forms.DataGridViewTextBoxColumn E_Profit;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
     }
 }

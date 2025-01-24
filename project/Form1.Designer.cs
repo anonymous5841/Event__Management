@@ -47,11 +47,11 @@
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -267,6 +267,7 @@
             this.linkLabel2.TabIndex = 5;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Sign Up";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // linkLabel1
             // 
@@ -354,18 +355,6 @@
             this.panel3.Size = new System.Drawing.Size(409, 540);
             this.panel3.TabIndex = 14;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 25F);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(50, 252);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(314, 39);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "WELCOME BACK!";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -390,17 +379,17 @@
             this.label6.TabIndex = 17;
             this.label6.Text = "event is just a few clicks away!";
             // 
-            // label7
+            // label4
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(24, 234);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 63);
-            this.label7.TabIndex = 18;
-            this.label7.Text = "\"";
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 25F);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(50, 252);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(314, 39);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "WELCOME BACK!";
             // 
             // label8
             // 
@@ -413,6 +402,18 @@
             this.label8.Size = new System.Drawing.Size(46, 63);
             this.label8.TabIndex = 19;
             this.label8.Text = "\"";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(24, 234);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(46, 63);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "\"";
             // 
             // Form1
             // 

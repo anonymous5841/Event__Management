@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
     </Reference>
@@ -51,13 +54,76 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDashboard.Designer.cs">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllVendors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllVendors.Designer.cs">
+      <DependentUpon>AllVendors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovedEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApprovedEvents.Designer.cs">
+      <DependentUpon>ApprovedEvents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendee.Designer.cs">
+      <DependentUpon>Attendee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardForm.Designer.cs">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeletedEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeletedEvents.Designer.cs">
+      <DependentUpon>DeletedEvents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeletedViewMore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeletedViewMore.Designer.cs">
+      <DependentUpon>DeletedViewMore.cs</DependentUpon>
+    </Compile>
     <Compile Include="EventEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EventEditForm.Designer.cs">
       <DependentUpon>EventEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventHistory.Designer.cs">
+      <DependentUpon>EventHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventsApproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventsApproval.Designer.cs">
+      <DependentUpon>EventsApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eventsviewmore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eventsviewmore.Designer.cs">
+      <DependentUpon>Eventsviewmore.cs</DependentUpon>
     </Compile>
     <Compile Include="EventViewForm.cs">
       <SubType>Form</SubType>
@@ -76,6 +142,12 @@
     </Compile>
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAttendee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAttendee.Designer.cs">
+      <DependentUpon>FormAttendee.cs</DependentUpon>
     </Compile>
     <Compile Include="FormEvent.cs">
       <SubType>Form</SubType>
@@ -109,6 +181,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
     <Compile Include="SponsorCreateForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +198,18 @@
     </Compile>
     <Compile Include="SponsorEditForm.Designer.cs">
       <DependentUpon>SponsorEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sponsors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sponsors.Designer.cs">
+      <DependentUpon>Sponsors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SponsorsViewMore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SponsorsViewMore.Designer.cs">
+      <DependentUpon>SponsorsViewMore.cs</DependentUpon>
     </Compile>
     <Compile Include="VendorCreateForm.cs">
       <SubType>Form</SubType>
@@ -133,6 +223,18 @@
     <Compile Include="VendorEditForm.Designer.cs">
       <DependentUpon>VendorEditForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="VendorsViewMore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendorsViewMore.Designer.cs">
+      <DependentUpon>VendorsViewMore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Venue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venue.Designer.cs">
+      <DependentUpon>Venue.cs</DependentUpon>
+    </Compile>
     <Compile Include="VenueCreateForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,8 +247,38 @@
     <Compile Include="VenueEditForm.Designer.cs">
       <DependentUpon>VenueEditForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllVendors.resx">
+      <DependentUpon>AllVendors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApprovedEvents.resx">
+      <DependentUpon>ApprovedEvents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendee.resx">
+      <DependentUpon>Attendee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardForm.resx">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeletedEvents.resx">
+      <DependentUpon>DeletedEvents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeletedViewMore.resx">
+      <DependentUpon>DeletedViewMore.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EventEditForm.resx">
       <DependentUpon>EventEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventHistory.resx">
+      <DependentUpon>EventHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventsApproval.resx">
+      <DependentUpon>EventsApproval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eventsviewmore.resx">
+      <DependentUpon>Eventsviewmore.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EventViewForm.resx">
       <DependentUpon>EventViewForm.cs</DependentUpon>
@@ -156,6 +288,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAttendee.resx">
+      <DependentUpon>FormAttendee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEvent.resx">
       <DependentUpon>FormEvent.cs</DependentUpon>
@@ -181,17 +316,32 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SponsorCreateForm.resx">
       <DependentUpon>SponsorCreateForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SponsorEditForm.resx">
       <DependentUpon>SponsorEditForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Sponsors.resx">
+      <DependentUpon>Sponsors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SponsorsViewMore.resx">
+      <DependentUpon>SponsorsViewMore.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VendorCreateForm.resx">
       <DependentUpon>VendorCreateForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VendorEditForm.resx">
       <DependentUpon>VendorEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VendorsViewMore.resx">
+      <DependentUpon>VendorsViewMore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venue.resx">
+      <DependentUpon>Venue.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VenueCreateForm.resx">
       <DependentUpon>VenueCreateForm.cs</DependentUpon>

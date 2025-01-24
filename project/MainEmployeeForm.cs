@@ -12,10 +12,22 @@ namespace project
 {
     public partial class MainEmployeeForm : System.Windows.Forms.Form
     {
-        public MainEmployeeForm()
+        private int userId;
+        public MainEmployeeForm(int User_id, int isAttendee)
         {
             InitializeComponent();
             button2.Enabled = false;
+            userId = User_id;
+            if (isAttendee == 1)
+            {
+                guna2GradientButtonAttendee.Enabled = true;
+                guna2GradientButtonAttendee.Visible = true;
+            }
+            else
+            {
+                guna2GradientButtonAttendee.Enabled = false;
+                guna2GradientButtonAttendee.Visible = false;
+            }
 
         }
 
@@ -76,7 +88,9 @@ namespace project
             guna2GradientButtonVenue.FillColor = Color.Transparent;
             guna2GradientButtonSponsor.FillColor = Color.Transparent;
             guna2GradientButtonLogout.FillColor = Color.Transparent;
-            loadform(new EventViewForm());
+            guna2GradientButtonAttendee.FillColor = Color.Transparent;
+
+            loadform(new EventViewForm(userId));
         }
 
         private void guna2GradientButtonVendor_Click(object sender, EventArgs e)
@@ -86,7 +100,9 @@ namespace project
             guna2GradientButtonVenue.FillColor = Color.Transparent;
             guna2GradientButtonSponsor.FillColor = Color.Transparent;
             guna2GradientButtonLogout.FillColor = Color.Transparent;
-            loadform(new FormVendor());
+            guna2GradientButtonAttendee.FillColor = Color.Transparent;
+
+            loadform(new FormVendor(userId));
 
         }
 
@@ -97,7 +113,9 @@ namespace project
             guna2GradientButtonVenue.FillColor = Color.HotPink;
             guna2GradientButtonSponsor.FillColor = Color.Transparent;
             guna2GradientButtonLogout.FillColor = Color.Transparent;
-            loadform(new FormVenue());
+            guna2GradientButtonAttendee.FillColor = Color.Transparent;
+
+            loadform(new FormVenue(userId));
         }
 
         private void guna2GradientButtonSponsor_Click(object sender, EventArgs e)
@@ -108,7 +126,9 @@ namespace project
             guna2GradientButtonVenue.FillColor = Color.Transparent;
             guna2GradientButtonSponsor.FillColor = Color.HotPink;
             guna2GradientButtonLogout.FillColor = Color.Transparent;
-            loadform(new FormSponsor());
+            guna2GradientButtonAttendee.FillColor = Color.Transparent;
+
+            loadform(new FormSponsor(userId));
         }
 
         private void guna2GradientButtonLogout_Click(object sender, EventArgs e)
@@ -118,6 +138,8 @@ namespace project
             guna2GradientButtonVenue.FillColor = Color.Transparent;
             guna2GradientButtonSponsor.FillColor = Color.Transparent;
             guna2GradientButtonLogout.FillColor = Color.HotPink;
+            guna2GradientButtonAttendee.FillColor = Color.Transparent;
+
 
             this.Hide();
             Form1 form = new Form1();
@@ -143,5 +165,16 @@ namespace project
             childform.Show();
         }
 
+        private void guna2GradientButtonAttendee_Click(object sender, EventArgs e)
+        {
+            guna2GradientButtonEvent.FillColor = Color.Transparent;
+            guna2GradientButtonVendor.FillColor = Color.Transparent;
+            guna2GradientButtonVenue.FillColor = Color.Transparent;
+            guna2GradientButtonSponsor.FillColor = Color.Transparent;
+            guna2GradientButtonLogout.FillColor = Color.Transparent;
+            guna2GradientButtonAttendee.FillColor = Color.HotPink;
+
+            loadform(new FormAttendee(userId));
+        }
     }
 }
