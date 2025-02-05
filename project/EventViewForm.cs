@@ -17,6 +17,7 @@ namespace project
     {
         private int userid;
         private Form form;
+
         public EventViewForm(int user_id)
         {
             userid = user_id;
